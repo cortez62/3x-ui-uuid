@@ -1,6 +1,7 @@
 package controller
 
 import (
+	"math"
 	"net/http"
 	"strings"
 	"time"
@@ -87,7 +88,14 @@ func (a *APIController) getClientExpiryByUUID(c *gin.Context) {
 		"expiryTime": expiryTime,
 	}
 	if expiryTime > 0 {
-		response["expiryDate"] = time.UnixMilli(expiryTime).UTC().Format(time.RFC3339)
+		expiryDateTime := time.UnixMilli(expiryTime).UTC()
+		response["expiryDate"] = expiryDateTime.Format("2006-01-02")
+
+		remainingMs := expiryTime - time.Now().UnixMilli()
+		response["daysRemaining"] = int64(math.Ceil(float64(remainingMs) / 86400000.0))
+		response["expired"] = remainingMs <= 0
+	} else {
+		response["expired"] = false
 	}
 
 	jsonObj(c, response, nil)
