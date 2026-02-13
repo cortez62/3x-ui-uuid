@@ -775,8 +775,14 @@ install_x-ui() {
             fi
         fi
         echo -e "Got x-ui latest version: ${tag_version}, beginning the installation..."
-        curl -4fLRo ${xui_folder}-linux-$(arch).tar.gz https://github.com/cortez62/3x-ui-uuid/releases/download/${tag_version}/x-ui-linux-$(arch).tar.gz
-        if [[ $? -ne 0 ]]; then
+        download_ok=0
+        for i in 1 2 3 4 5 6; do
+            curl -4fLRo ${xui_folder}-linux-$(arch).tar.gz https://github.com/cortez62/3x-ui-uuid/releases/download/${tag_version}/x-ui-linux-$(arch).tar.gz && download_ok=1 && break
+            curl -4fLRo ${xui_folder}-linux-$(arch).tar.gz https://github.com/cortez62/3x-ui-uuid/releases/latest/download/x-ui-linux-$(arch).tar.gz && download_ok=1 && break
+            echo -e "${yellow}Release asset not ready yet (attempt ${i}/6). Retrying in 10s...${plain}"
+            sleep 10
+        done
+        if [[ ${download_ok} -ne 1 ]]; then
             echo -e "${red}Downloading x-ui failed, please be sure that your server can access GitHub ${plain}"
             exit 1
         fi
