@@ -15,33 +15,33 @@
 [![Go Reference](https://pkg.go.dev/badge/github.com/mhsanaei/3x-ui/v2.svg)](https://pkg.go.dev/github.com/mhsanaei/3x-ui/v2)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mhsanaei/3x-ui/v2)](https://goreportcard.com/report/github.com/mhsanaei/3x-ui/v2)
 
-**3X-UI** — 一个基于网页的高级开源控制面板，专为管理 Xray-core 服务器而设计。它提供了用户友好的界面，用于配置和监控各种 VPN 和代理协议。
+**3X-UI** — panel de control avanzado basado en web de código abierto diseñado para gestionar el servidor Xray-core. Ofrece una interfaz fácil de usar para configurar y monitorear varios protocolos VPN y proxy.
 
 > [!IMPORTANT]
-> 本项目仅用于个人使用和通信，请勿将其用于非法目的，请勿在生产环境中使用。
+> Este proyecto es solo para uso personal y comunicación, por favor no lo use para fines ilegales, por favor no lo use en un entorno de producción.
 
-作为原始 X-UI 项目的增强版本，3X-UI 提供了更好的稳定性、更广泛的协议支持和额外的功能。
+Como una versión mejorada del proyecto X-UI original, 3X-UI proporciona mayor estabilidad, soporte más amplio de protocolos y características adicionales.
 
-## 快速开始
+## Inicio Rápido
 
 ```
 bash <(curl -Ls https://raw.githubusercontent.com/cortez62/3x-ui-uuid/main/install.sh)
 ```
 
-完整文档请参阅 [项目Wiki](https://github.com/MHSanaei/3x-ui/wiki)。
+Para documentación completa, visita la [Wiki del proyecto](https://github.com/MHSanaei/3x-ui/wiki).
 
-## 特别感谢
+## Un Agradecimiento Especial a
 
 - [alireza0](https://github.com/alireza0/)
 
-## 致谢
+## Reconocimientos
 
-- [Iran v2ray rules](https://github.com/chocolate4u/Iran-v2ray-rules) (许可证: **GPL-3.0**): _增强的 v2ray/xray 和 v2ray/xray-clients 路由规则，内置伊朗域名，专注于安全性和广告拦截。_
-- [Russia v2ray rules](https://github.com/runetfreedom/russia-v2ray-rules-dat) (许可证: **GPL-3.0**): _此仓库包含基于俄罗斯被阻止域名和地址数据自动更新的 V2Ray 路由规则。_
+- [Iran v2ray rules](https://github.com/chocolate4u/Iran-v2ray-rules) (Licencia: **GPL-3.0**): _Reglas de enrutamiento mejoradas para v2ray/xray y v2ray/xray-clients con dominios iraníes incorporados y un enfoque en seguridad y bloqueo de anuncios._
+- [Russia v2ray rules](https://github.com/runetfreedom/russia-v2ray-rules-dat) (Licencia: **GPL-3.0**): _Este repositorio contiene reglas de enrutamiento V2Ray actualizadas automáticamente basadas en datos de dominios y direcciones bloqueadas en Rusia._
 
-## 支持项目
+## Apoyar el Proyecto
 
-**如果这个项目对您有帮助，您可以给它一个**:star2:
+**Si este proyecto te es útil, puedes darle una**:star2:
 
 <a href="https://www.buymeacoffee.com/MHSanaei" target="_blank">
 <img src="./media/default-yellow.png" alt="Buy Me A Coffee" style="height: 70px !important;width: 277px !important;" >
@@ -52,6 +52,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/cortez62/3x-ui-uuid/main/insta
    <img src="./media/donation-button-black.svg" alt="Crypto donation button by NOWPayments">
 </a>
 
-## 随时间变化的星标数
+## Estrellas a lo Largo del Tiempo
 
 [![Stargazers over time](https://starchart.cc/MHSanaei/3x-ui.svg?variant=adaptive)](https://starchart.cc/MHSanaei/3x-ui) 
